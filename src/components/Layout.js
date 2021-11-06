@@ -10,7 +10,7 @@ const styles = {
   },
 
   container: {
-    width: "1200px",
+    width: "1000px",
   },
 };
 
@@ -18,10 +18,7 @@ class Layout extends Component {
   render() {
     return (
       <div style={styles.layout}>
-        <div style={styles.container}>
-          {this.props.children}
-          lala
-        </div>
+        <div style={styles.container}>{this.props.children}</div>
       </div>
     );
   }
