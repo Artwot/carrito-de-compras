@@ -12,7 +12,7 @@ class App extends Component {
       { name: "Lechuga", price: 500, img: "/productos/lechuga.jpg" },
     ],
     carro: [
-      // { name: "Tomate", price: 1500, img: "/productos/tomate.jpg" }
+      // { name: "Tomate", price: 1500, img: "/productos/tomate.jpg" , cantidad}
     ],
     esCarroVisible: false,
   };
@@ -40,7 +40,7 @@ class App extends Component {
 
   mostrarCarro = () => {
     if (!this.state.carro.length) {
-      return 
+      return;
     }
     this.setState({ esCarroVisible: !this.state.esCarroVisible });
   };
